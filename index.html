@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        display: block;
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const images = [
+        "https://photos.zillowstatic.com/fp/1ac799ed39a3e7567fe8c06cfb87d6cc-cc_ft_960.jpg",
+        "https://photos.zillowstatic.com/fp/c6586a809f2df87ec0245146e7e42d66-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/24b57c6c332218eaa9b8129eb3026b32-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/4e6af76e413c1d13e29aabc4ed8edb18-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/3ff08d886433d2de3450d15cece2eebd-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/1ac799ed39a3e7567fe8c06cfb87d6cc-cc_ft_960.jpg",
+        "https://photos.zillowstatic.com/fp/c6586a809f2df87ec0245146e7e42d66-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/24b57c6c332218eaa9b8129eb3026b32-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/4e6af76e413c1d13e29aabc4ed8edb18-cc_ft_960.jpg",
+        "https://photos.zillowstatic.com/fp/3ff08d886433d2de3450d15cece2eebd-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/594d5febaf5a215d2a9cd9a9f4656872-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/79a49a45016c0c7edb2a2ae48e9fb6ab-cc_ft_960.jpg",
+        "https://photos.zillowstatic.com/fp/6f0320f8f23db3cbdc00cbd0d3d089cd-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/4fbe02552bdf203233e1af49324cc30c-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/1c2b82e02d8c904529fa0602dfb3679b-cc_ft_960.jpg",
+        "https://photos.zillowstatic.com/fp/ed36314e9790c4eb4a22623c85634292-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/ee11c6c484ac436b2447c56a54ad9fff-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/6c5c80aeecbd2fdf89d41c1d2a335511-cc_ft_960.jpg",
+        "https://photos.zillowstatic.com/fp/d2eeeeccba505c1a85a641d1b85145a6-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/7071bfc5acbb917a5fa10bf94ddc447e-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/e1d4d85d2482cd5eb3bc25abc384c4b0-cc_ft_960.jpg",
+        "https://photos.zillowstatic.com/fp/67478ca9c28b3f07a8a0bb7f95652c10-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/569e143f2694f43a1430e413fcda562b-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/ab95ecac840978bb2d96cebfee287974-cc_ft_960.jpg",
+        "https://photos.zillowstatic.com/fp/71b44cc92039120aef3548725ae0d808-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/c13cd7522faedc4028e12c162921df07-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/ecea8081aeb56672ce691432d4739dcf-cc_ft_960.jpg",
+        "https://photos.zillowstatic.com/fp/a5664cd2174005730ccdc8fd105e2609-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/f5622c5ee59aabb761cddd11557286c3-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/5c38e1ce6eb0e58ed34bcd8aee5efef2-cc_ft_960.jpg",
+        "https://photos.zillowstatic.com/fp/926e9fce4b03aad35ee4c3dabbd2b0d8-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/11461e0c6e9a32bee5e7f10804ada876-cc_ft_576.jpg",
+        "https://photos.zillowstatic.com/fp/a2913a02e74e81a68b02f0b3ecae5cbf-cc_ft_960.jpg",
+        "https://photos.zillowstatic.com/fp/a0645e8224f8bf1f04b8082f3bba9e75-cc_ft_960.jpg",
+      ];
+      for (let url of images) {
+        const image = document.createElement('img');
+        image.src = url;
+        document.body.append(image);
+      }
+    </script>
+  </body>
+</html>
