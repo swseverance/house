@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      img {
-        display: block;
-        margin-bottom: 16px;
+      body {
+        margin: 0;
+        padding: 8px;
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
       }
     </style>
   </head>
@@ -49,8 +52,8 @@
         "https://photos.zillowstatic.com/fp/a2913a02e74e81a68b02f0b3ecae5cbf-cc_ft_960.jpg",
         "https://photos.zillowstatic.com/fp/a0645e8224f8bf1f04b8082f3bba9e75-cc_ft_960.jpg",
       ];
-      for (let url of images) {
-        const image = document.createElement('img');
+      for (let url of Array.from(new Set(images))) {
+        const image = document.createElement("img");
         image.src = url;
         document.body.append(image);
       }
